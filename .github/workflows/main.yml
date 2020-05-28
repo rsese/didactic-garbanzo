@@ -27,5 +27,5 @@ jobs:
     - name: Run a multi-line script
       shell: pwsh
       run: |
-        Get-Location
-        Get-ChildItem
+        $Test = $(Get-Location)
+        Write-Output "Hello world"
